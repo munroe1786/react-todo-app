@@ -3,9 +3,11 @@ import React from "react";
 class TodosList extends React.Component {
     render() {
         return (
-            <div>
-                <h1>Hello</h1>
-            </div>
+            <ul>
+                {this.props.todos.map(todo => (
+                    <li key={todo.id}>{todo.title}</li>
+                ))}
+            </ul>
         )
     }
 }
