@@ -1,10 +1,13 @@
 import React from 'react';
 
-function TodoItem(props) {
-    return
-    <li>
-        {this.props.todo.title}
-    </li>
+class TodoItem extends React.Component {
+    render() {
+        return (
+            <li>
+                {this.props.todo.title}
+            </li>
+        )
+    }
 }
 
 
